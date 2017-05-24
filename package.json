@@ -1,0 +1,19 @@
+{
+  "name": "ls_portal",
+  "version": "1.0.0",
+  "description": "the official site of Light&Shadow Photography Studio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cold-coder/lsportal.git"
+  },
+  "author": "Yao Cheng",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cold-coder/lsportal/issues"
+  },
+  "homepage": "https://github.com/cold-coder/lsportal#readme"
+}
