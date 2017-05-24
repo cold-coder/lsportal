@@ -4,7 +4,9 @@
   "description": "the official site of Light&Shadow Photography Studio",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy-preview": "rsync -anv ./ --exclude=.git --exclude=misc --exclude=.font-spider yaocheng@bananasusu.com:/home/yaocheng/ls",
+    "deploy": "rsync -azP ./ --exclude=.git --exclude=misc --exclude=.font-spider yaocheng@bananasusu.com:/home/yaocheng/ls"
   },
   "repository": {
     "type": "git",

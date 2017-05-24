@@ -23,6 +23,10 @@ html {
   background-color: #F8F8F8;
 }
 
+a, a:active {
+    color: #2c3e50;
+    text-decoration: none;
+}
 
 /*
  * Remove text-shadow in selection highlight:
@@ -270,28 +274,89 @@ ul {
   }
 }
 
-.desktop-menu {
-  margin: 40px 0;
-  display: none;
+/**
+ * For user defined style
+ * @type {[type]}
+ */
+
+ @font-face {
+   font-family: 'Zhang Hai Shan Rui Xian Ti';
+   font-style: normal;
+   font-weight: 400;
+   src: url('../font/张海山锐线体.ttf') format('truetype');
+ }
+
+.zhsrxt {
+  font-family: 'Zhang Hai Shan Rui Xian Ti';
 }
-.desktop-menu h1 {
+
+header .logo h1 {
   text-align: center;
   color: #292929;
-  font-size: 32px;
-  margin: 0;
+  font-size: 24px;
+  margin: 10px 10px 0 10px;
 }
-.desktop-menu > div {
+header .logo > div {
   text-transform: uppercase;
   color: #A0A09F;
   letter-spacing: 0.7em;
   text-align: center;
+  font-size: 10px;
+  font-weight: 200;
 }
 
+header .menu-selected {
+  color: #A0A09F;
+}
+
+.container {
+  margin-top: 80px;
+}
+
+/*
+  for PC
+ */
 @media screen and (min-width: 768px) {
-  .mobile-menu {
+  header .logo {
+    display: block;
+    margin-top: 40px;
+    position: inherit;
+  }
+  header label {
     display: none;
   }
-  .desktop-menu {
-    display: block;
+  header .logo h1 {
+    text-align: center;
+    color: #292929;
+    font-size: 32px;
+    margin: 0;
+  }
+  header input ~ nav{
+    position: relative;
+    background-color: transparent;
+    overflow-y: auto;
+    height: auto;
+    max-width: 1100px;
+    margin: 0 auto;
+    transition: none;
+  }
+  header input ~ nav > ul {
+    position: inherit;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 20px;
+  }
+  header input ~ nav > ul > li {
+    opacity: 1;
+    font-style: italic;
+    font-weight: 200;
+  }
+  header input ~ nav > ul > li > a:hover {
+    color: #A0A09F;
+    transition: color 0.4s ease 0s;
   }
 }
