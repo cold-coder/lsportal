@@ -309,8 +309,113 @@ header .menu-selected {
   color: #A0A09F;
 }
 
-.container {
+.site-main {
   margin-top: 80px;
+}
+
+.inner-width {
+  margin: 0 auto;
+  max-width: 1100px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.cover,.post {
+  background-color: #111;
+  color: #fff;
+  display: table;
+  height: 100vh;
+  margin-bottom: 60px;
+  position: relative;
+  width: 100%;
+}
+
+.post {
+  margin-bottom: 15px;
+}
+
+.cover, .cover.hero {
+  height: 350px;
+  margin-bottom: 30px;
+}
+
+.post.hero {
+  height: 350px;
+}
+
+.cover-bg, .post-bg {
+    -webkit-animation: fadeIn 1s ease-in-out;
+    animation: fadeIn 1s ease-in-out;
+    background-position: center;
+    background-size: cover;
+    bottom: 0;
+    left: 0;
+    opacity: 0.4;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.post-bg {
+  opacity: 1;
+}
+
+.cover-content {
+  display: table-cell;
+  position: relative;
+  text-align: left;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.cover-content__right {
+  text-align: right
+}
+
+.cover-content__right .hero-wrap {
+  border-left-width: 0;
+  border-right: 5px solid #ffea00;
+}
+
+.inner {
+  margin: 0 auto;
+  max-width: 740px;
+}
+
+.cover .inner {
+  margin-bottom: 30px;
+  /*padding-top: 60px;*/
+}
+
+.cover.hero .inner {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.hero-wrap {
+  border-left: 5px solid #ffea00;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-left-width: 5px;
+}
+
+.hero-title {
+  font-size: 34px;
+  margin-top: 15px;
+}
+
+.hero-text {
+  -webkit-animation-delay: .4s;
+  animation-delay: .4s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  font-size: 16px;
+  font-style: italic;
+
 }
 
 /*
@@ -358,5 +463,30 @@ header .menu-selected {
   header input ~ nav > ul > li > a:hover {
     color: #A0A09F;
     transition: color 0.4s ease 0s;
+  }
+  .site-main {
+    margin-top: 0;
+  }
+  .inner-width {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .cover, .cover.hero {
+    height: 450px;
+  }
+  /*.cover-content {
+    text-align: left;
+  }*/
+  .hero-wrap {
+    border-left-width: 7px;
+  }
+  .cover-content__right .hero-wrap {
+    border-right-width: 7px;
+  }
+  .hero-title {
+    font-size: 40px;
+  }
+  .hero-text {
+    16px;
   }
 }

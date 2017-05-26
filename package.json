@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy-preview": "rsync -anv ./ --exclude=.git --exclude=misc --exclude=.font-spider yaocheng@bananasusu.com:/home/yaocheng/ls",
-    "deploy": "rsync -azP ./ --exclude=.git --exclude=misc --exclude=.font-spider yaocheng@bananasusu.com:/home/yaocheng/ls"
+    "deploy-preview": "rsync -anv ./ --exclude=.git --exclude=misc --exclude=.font-spider --exclude=.DS_Store yaocheng@bananasusu.com:/home/yaocheng/ls",
+    "deploy": "rsync -azP ./ --exclude=.git --exclude=misc --exclude=.font-spider --exclude=.DS_Store yaocheng@bananasusu.com:/home/yaocheng/ls"
   },
   "repository": {
     "type": "git",
